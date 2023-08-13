@@ -1,0 +1,25 @@
+module.exports = {
+  root: true,
+  extends: ["@nuxtjs/eslint-config-typescript", "prettier"],
+  ignorePatterns: [
+    "**/.nuxt/**/*",
+    ".pnp.*",
+    ".yarn",
+    "node_modules",
+    "**/node_modules",
+    "**/.output",
+    "**/coverage",
+    "types/graphql.ts",
+    "!.*",
+    "!dist",
+    "!typing.d.ts",
+    "**/*.generated.ts",
+  ],
+  rules: {
+    camelcase: "off",
+    "no-useless-constructor": "off",
+    "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
+    "vue/multi-word-component-names": "off",
+    "vue/no-setup-props-destructure": "off",
+  },
+}

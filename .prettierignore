@@ -1,0 +1,30 @@
+# Yarn Berry
+# @see https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+.pnp.*
+.yarn/*
+node_modules
+yarn.lock
+
+# ESlint
+.eslintcache
+
+# Stylelint
+.stylelintcache
+
+# Nuxt
+# @see https://nuxt.com/docs/guide/directory-structure/gitignore#git-ignore-file
+.nuxt
+.output
+*.log
+
+# Testing
+**/__snapshots__/*.snap
+coverage
+
+types/fragmentTypes.json
+types/graphql.ts
+
+# gen file
+**/type.generated.ts
+**/schema.generated.graphql
+**/urql.generated.ts
